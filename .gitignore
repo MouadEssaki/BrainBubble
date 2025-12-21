@@ -1,0 +1,6 @@
+# Empêcher de pousser les secrets
+.env
+
+# Ignorer les dossiers des OS
+.DS_Store
+Thumbs.db
