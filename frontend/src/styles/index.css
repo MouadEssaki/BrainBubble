@@ -1,0 +1,28 @@
+@import url('melodrama.css');
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: corporate --default;
+}
+
+
+.Melodrama-Light {
+  font-family: 'Melodrama-Light', sans-serif;
+}
+
+.Melodrama-Regular {
+  font-family: 'Melodrama-Regular', sans-serif;
+}
+
+.Melodrama-Medium {
+  font-family: 'Melodrama-Medium', sans-serif;
+}
+
+.Melodrama-Semibold {
+  font-family: 'Melodrama-Semibold', sans-serif;
+}
+
+.Melodrama-Bold {
+  font-family: 'Melodrama-Bold', sans-serif;
+}
+

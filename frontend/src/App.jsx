@@ -1,20 +1,20 @@
-import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LandingPage from './views/LandingPage'
+import Login from './views/Login'
 
+
+// 2. Le composant App gère maintenant uniquement le Router
 function App() {
-    const [msg, setMsg] = useState("Connecting to Backend...")
-
-    useEffect(() => {
-        fetch("http://localhost:8080/api/test")
-            .then(res => res.text())
-            .then(data => setMsg(data))
-            .catch(() => setMsg("Backend is offline ❌"))
-    }, [])
-
     return (
-        <div style={{ textAlign: 'center', marginTop: '50px' }}>
-            <h1>Brain Bubble App</h1>
-            <p>Status: <strong>{msg}</strong></p>
-        </div>
-    )
+        <>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<LandingPage />} />
+                    <Route path="/Login" element={<Login />} />
+                </Routes>
+            </BrowserRouter>
+        </>
+    );
 }
-export default App
+
+export default App;
