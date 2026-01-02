@@ -30,7 +30,6 @@ const LandingPage = () => {
   };
 
   return (
-    // Bg-color changed to match the dark section to fill the gaps
     <motion.div className="min-h-screen font-sans text-black overflow-x-hidden bg-[#342F2F]">
 
       <Navbar />

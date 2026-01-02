@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
@@ -21,7 +20,7 @@ const Shocase = () => {
     return (
         <motion.section
             ref={showcaseRef}
-            className="py-50 px-4 md:px-12 lg:px-24 min-h-screen flex items-center justify-center perspective-1000 overflow-hidden"
+            className="py-30 px-4 md:px-12 lg:px-24 min-h-screen flex items-center justify-center perspective-1000 overflow-hidden"
         >
             <div className="max-w-7xl w-full mx-auto relative z-10">
 

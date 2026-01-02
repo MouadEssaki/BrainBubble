@@ -54,7 +54,6 @@ const FeatureCard = ({ feature, index }) => {
                 `} />
 
                 <div className="relative z-10 flex flex-col h-full">
-                    {/* Header: Icon + Badge */}
                     <div className="flex justify-between items-start mb-8">
                         <div className="
                             w-14 h-14 rounded-2xl flex items-center justify-center 
@@ -76,7 +75,6 @@ const FeatureCard = ({ feature, index }) => {
                         )}
                     </div>
 
-                    {/* Content */}
                     <h3 className="text-2xl font-bold mb-4 text-white group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-linear-to-r group-hover:from-white group-hover:to-gray-300 transition-all">
                         {feature.title}
                     </h3>
@@ -85,7 +83,6 @@ const FeatureCard = ({ feature, index }) => {
                         {feature.description}
                     </p>
 
-                    {/* Bottom Action */}
                     <div className="mt-auto pt-8">
                         <div className="flex items-center gap-2 text-sm font-semibold text-white/50 group-hover:text-white transition-colors">
                             <span>Discover feature</span>
@@ -102,10 +99,6 @@ const Features = () => {
     return (
         <section className="py-24 px-6 md:px-12 relative overflow-hidden bg-[#342F2F]">
 
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] left-[-10%] w-125 h-125 bg-purple-500/10 rounded-full blur-[120px] mix-blend-screen" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-125 h-125 bg-blue-500/10 rounded-full blur-[120px] mix-blend-screen" />
-            </div>
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <motion.div
@@ -114,7 +107,7 @@ const Features = () => {
                     viewport={{ once: false }}
                     className="text-center max-w-3xl mx-auto mb-20"
                 >
-                    <h2 className=" Melodrama-Bold text-4xl md:text-5xl font-bold mb-6 text-white tracking-tight">
+                    <h2 className=" Melodrama-Bold text-4xl md:text-5xl mb-6 text-white tracking-tight">
                         Supercharge your brain  <br />
                         <span>with </span>
                         <span className=" Melodrama-Regular text-transparent bg-clip-text bg-[#ded5cd]">
