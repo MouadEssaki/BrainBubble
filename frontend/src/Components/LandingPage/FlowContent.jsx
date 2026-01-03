@@ -59,7 +59,7 @@ const getNodes = (isMobile) => [
         type: 'heroNode',
         position: isMobile ? { x: 0, y: 450 } : { x: 350, y: -100 },
         data: {
-            tag: 'Step ',
+            tag: 'Step 3',
             type: 'output',
             label: (
                 <div className="text-center">
