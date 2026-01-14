@@ -1,9 +1,10 @@
 import { ShaderGradientCanvas, ShaderGradient } from '@shadergradient/react'
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+
+const Register = () => {
     return (
         <div className="flex h-screen w-full font-sans overflow-hidden bg-[#ded5cd]">
 
@@ -28,8 +29,8 @@ const Login = () => {
                         className="max-w-md w-full mx-auto py-12"
                     >
                         <div className="item-center mb-8 text-center justify-center">
-                            <h1 className="text-4xl font-bold text-white tracking-tight">Welcome back</h1>
-                            <p className="text-gray-300 mt-2">Please enter your credentials to continue.</p>
+                            <h1 className="text-4xl font-bold text-white tracking-tight"> Register </h1>
+                            <p className="text-gray-300 mt-2"> Create your account to get started </p>
                         </div>
 
                         <form className="space-y-5">
@@ -49,9 +50,6 @@ const Login = () => {
                                     placeholder="••••••••"
                                     className="w-full px-4 py-3 rounded-lg border border-white/10 focus:border-[#ded5cd] focus:ring-1 focus:ring-[#ded5cd] outline-none transition-all bg-white/5 text-white placeholder-gray-500"
                                 />
-                                <div className="flex justify-end mt-2">
-                                    <a href="#" className="text-xs font-medium text-gray-300 hover:text-white">Forgot password?</a>
-                                </div>
                             </div>
 
                             <motion.button
@@ -60,7 +58,7 @@ const Login = () => {
                                 type="button"
                                 className="w-full bg-white text-[#342F2F] font-bold py-3.5 rounded-lg hover:bg-white transition-colors shadow-lg hover:shadow-xl"
                             >
-                                Sign In
+                                Sign Up
                             </motion.button>
                         </form>
 
@@ -83,7 +81,7 @@ const Login = () => {
                         </div>
 
                         <p className="text-center text-sm text-gray-400">
-                            Don't have an account yet? <Link to="/Register" className="font-semibold text-white hover:underline">Sign Up</Link>
+                            Have an account? <Link to="/Login" className="font-semibold text-white hover:underline">Sign In</Link>
                         </p>
                     </motion.div>
                 </div>
@@ -158,4 +156,4 @@ const Login = () => {
     );
 }
 
-export default Login;
+export default Register;
