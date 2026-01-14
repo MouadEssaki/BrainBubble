@@ -1,30 +1,24 @@
 package com.BrainBubble.backend.user;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Table(name = "users")
-
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User {
-
-    @Getter
-    @Setter
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Getter
-    @Setter
-    @Column(name = "name")
-    private String name;
+    @Column(unique = true, nullable = false)
+    private String username;
 
+    @Column(nullable = false)
+    private String password; // Sera haché
 
-    @Getter
-    @Setter
-    @Column(name = "email")
+    @Column(unique = true, nullable = false)
     private String email;
-
-
 }
